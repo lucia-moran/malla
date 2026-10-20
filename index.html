@@ -5,106 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Malla Curricular - Computación Científica UNMSM</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      margin: 0;
-      background: #f4f6fa;
-      color: #333;
-      padding: 1rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    header img {
-      width: 600px;
-      heigth: 300px;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
-    }
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-    .ciclo {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 250px;
-      flex-grow: 1;
-    }
-
-    .ciclo h2 {
-      text-align: center;
-      margin-top: 0;
-      font-size: 1.1rem;
-      color: #00509d;
-    }
-
-    .curso {
-      margin: 0.3rem 0;
-      background: #e6eefc;
-      padding: 0.5rem;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .curso:hover {
-      background: #d0e0fa;
-    }
-
-    .curso input {
-      display: none;
-    }
-
-    .curso label {
-      flex: 1;
-      margin-left: 0.5rem;
-    }
-
-    .bloqueado {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-
-    .completado {
-      text-decoration: line-through;
-      background: #c0e8c2;
-    }
-
-    #resumen {
-      text-align: center;
-      margin: 1rem 0 2rem;
-      font-weight: bold;
-    }
-
-    @media screen and (max-width: 768px) {
-      .grid {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -192,18 +93,11 @@
         { cod: '183104', nombre: 'PRESENTACIÓN Y SUSTENTACIÓN DEL PROYECTO DE INVESTIGACIÓN', cred: 6, pre: ['183094'] }
       ],
       0: [
-        { cod: '183111', nombre: 'ECUACIONES DIFERENCIALES PARCIALES II', cred: 5, pre: ['183081', '183071'] },
         { cod: '183112', nombre: 'ANÁLISIS COMPLEJO Y APLICADO', cred: 5, pre: ['183051'] },
-        { cod: '183113', nombre: 'ECUACIONES INTEGRALES', cred: 5, pre: ['183081'] },
-        { cod: '183114', nombre: 'ANÁLISIS COMPLEJO EN CN', cred: 5, pre: ['183112'] },
         { cod: '183115', nombre: 'PROBLEMAS INVERSOS', cred: 5, pre: ['183052'] },
         { cod: '183116', nombre: 'SISTEMAS DINÁMICOS', cred: 5, pre: ['183073'] },
-        { cod: '183121', nombre: 'METEOROLOGÍA', cred: 5, pre: ['183043'] },
-        { cod: '183122', nombre: 'TERMOELASTICIDAD', cred: 5, pre: ['183043'] },
         { cod: '183123', nombre: 'MECÁNICA CUÁNTICA', cred: 5, pre: ['183043'] },
-        { cod: '183124', nombre: 'GEOFÍSICA', cred: 5, pre: ['183043'] },
         { cod: '183125', nombre: 'MODELAMIENTO PARA LA ECOLOGÍA', cred: 5, pre: ['183043'] },
-        { cod: '183126', nombre: 'MÉTODOS DE LOS ELEMENTOS FINITOS', cred: 5, pre: ['183081', '183093'] },
         { cod: '183127', nombre: 'OPTIMIZACIÓN DINÁMICA Y CONVEXA', cred: 5, pre: ['183091'] },
         { cod: '183128', nombre: 'ELECTRÓNICA DIGITAL', cred: 5, pre: ['183034'] },
         { cod: '183131', nombre: 'SISTEMAS INTELIGENTES', cred: 5, pre: ['183074'] },
